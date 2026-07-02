@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>Application Form</title>
+</head>
+
+<body>
+
+<form action="/apply" method="post">
+
+  <label>How would you like to be addressed</label><br><br>
+  <input type="radio" name="address" value="mr"> Mr<br><br>
+  <input type="radio" name="address" value="miss"> Miss<br><br>
+  <input type="radio" name="address" value="mrs"> Mrs<br><br>
+
+  <label>First Name*</label><br><br>
+  <input type="text" name="fname" required><br><br>
+
+  <label>Last Name*</label><br><br>
+  <input type="text" name="lname" required><br><br>
+
+  <label>Email*</label><br><br>
+  <input type="email" name="email" required><br><br>
+
+  <label>Phone Type</label><br><br>
+  <select name="phonetype">
+    <option>Home</option>
+    <option>Work</option>
+    <option>Personal</option>
+  </select><br><br>
+
+  <label>Contact Number*</label><br><br>
+  <input type="tel" name="phone" required><br><br>
+
+  <label>Select Gender</label><br><br>
+  <select name="gender">
+    <option>Male</option>
+    <option>Female</option>
+    <option>Transgender</option>
+    <option>Other</option>
+  </select><br><br>
+
+  <label>Skills</label><br><br>
+  <input type="checkbox" name="skills[]" value="python"> Python<br><br>
+  <input type="checkbox" name="skills[]" value="mysql"> MySQL<br><br>
+  <input type="checkbox" name="skills[]" value="html"> HTML<br><br>
+  <input type="checkbox" name="skills[]" value="css"> CSS<br><br>
+  <input type="checkbox" name="skills[]" value="javascript"> JavaScript<br><br>
+
+  <label>Languages Known</label><br><br>
+  <input list="languages" name="languages"><br>
+  <datalist id="languages">
+    <option value="English">
+    <option value="Hindi">
+    <option value="Telugu">
+    <option value="Tamil">
+  </datalist><br><br>
+
+  <label>Brief Self Description</label><br><br>
+  <textarea name="about" rows="5" cols="50" placeholder="Write about yourself" required></textarea><br><br>
+
+ 
+
+  <input type="submit" value="Submit Application">
+
+</form>
+
+</body>
+</html>
